@@ -449,7 +449,7 @@ float* getAllError(float* facesEigenWt , float* testEigenWt , int eigenNumber , 
 float* getClassImagePreProcessed(char* filename , int height , int width , float* average){
 	float* image;
 
-	char url[100]; sprintf(url , "FaceSet\\Tst\\%s" , filename);
+	char url[100]; sprintf(url , "TrainFace\\Tst\\%s" , filename);
 	
 	image = returnImageVector(url , width , height);
 
@@ -477,7 +477,7 @@ int main()
 {
 	 
 	//Get Image 
-	char dir[] = "FaceSet\\Sets\\";
+	char dir[] = "TrainFace\\Sets\\";
 	int noInput , sc = 1 / 255.0;
 	
 	
